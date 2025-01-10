@@ -42,7 +42,7 @@ const ProjectCard = ({ title, description, image, link }: ProjectProps) => {
               width={400}
               className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
               alt="thumbnail"
-              loading="lazy"
+              /*loading="lazy"*/
             />
           </div>
         </CardItem>
