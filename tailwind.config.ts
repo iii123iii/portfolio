@@ -13,41 +13,49 @@ module.exports = {
   ],
   darkMode: ["class", "class"],
   theme: {
-    extend: {
-      animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
-      },
-      keyframes: {
-        spotlight: {
-          "0%": {
-            opacity: 0,
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate(-50%,-40%) scale(1)",
-          },
-        },
-      },
-    },
-    screens: {
-      md: "1000px",
-    },
-    fontFamily: {
-      outfit: ["--font-outfit"],
-    },
-    fontWeight: {
-      thin: "100",
-      hairline: "100",
-      extralight: "200",
-      light: "300",
-      normal: "400",
-      medium: "500",
-      semibold: "600",
-      bold: "700",
-      extrabold: "800",
-      black: "900",
-    },
+  	extend: {
+  		animation: {
+  			spotlight: 'spotlight 2s ease .75s 1 forwards'
+  		},
+  		keyframes: {
+  			spotlight: {
+  				'0%': {
+  					opacity: 0,
+  					transform: 'translate(-72%, -62%) scale(0.5)'
+  				},
+  				'100%': {
+  					opacity: 1,
+  					transform: 'translate(-50%,-40%) scale(1)'
+  				}
+  			}
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		colors: {}
+  	},
+  	screens: {
+  		md: '1000px'
+  	},
+  	fontFamily: {
+  		outfit: [
+  			'--font-outfit'
+  		]
+  	},
+  	fontWeight: {
+  		thin: '100',
+  		hairline: '100',
+  		extralight: '200',
+  		light: '300',
+  		normal: '400',
+  		medium: '500',
+  		semibold: '600',
+  		bold: '700',
+  		extrabold: '800',
+  		black: '900'
+  	}
   },
   plugins: [
     addVariablesForColors,

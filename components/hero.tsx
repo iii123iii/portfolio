@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import { Spotlight } from "./ui/Spotlight";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -29,14 +31,12 @@ export function Hero() {
           </div>
           <span className="black">And this is my portfolio.</span>
         </div>
-        <div className="text-start mt-4">
-          <a
-            href="https://github.com/iii123iii"
-            target="_blank"
-            className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-slate-600 to-gray-800 rounded-xl shadow-lg hover:from-slate-500 hover:to-gray-700 focus:outline-none transition-all duration-200 transform hover:scale-105"
-          >
-            My Github
-          </a>
+        <div className="flex text-start">
+          <Button asChild>
+            <Link href="https://github.com/iii123iii" target="_blank">
+              My Github
+            </Link>
+          </Button>
         </div>
       </motion.h1>
     </HeroHighlight>
