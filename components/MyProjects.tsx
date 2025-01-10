@@ -27,7 +27,7 @@ const MyProjects = () => {
       />
       <ProjectCard
         title="Compiler"
-        description="A compiler that supports the command print, made with Python and Assembly"
+        description={`A compiler that supports the command print,\nmade with Python and Assembly`}
         image="/Projects/Compiler.png"
         link="https://github.com/iii123iii/Compiler"
       />
