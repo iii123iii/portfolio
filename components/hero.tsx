@@ -24,10 +24,19 @@ export function Hero() {
         <div className="relative justify-items-start">
           <div>
             <span className="black">Hi im</span>{" "}
-            <Highlight className="text-white p-0">Omri K</Highlight>
+            <Highlight className="text-white p-0">Omri</Highlight>
             <span className="black">,</span>
           </div>
           <span className="black">And this is my portfolio.</span>
+        </div>
+        <div className="text-start mt-4">
+          <a
+            href="https://github.com/iii123iii"
+            target="_blank"
+            className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-slate-600 to-gray-800 rounded-xl shadow-lg hover:from-slate-500 hover:to-gray-700 focus:outline-none transition-all duration-200 transform hover:scale-105"
+          >
+            My Github
+          </a>
         </div>
       </motion.h1>
     </HeroHighlight>

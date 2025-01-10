@@ -15,21 +15,21 @@ const MyProjects = () => {
     >
       <ProjectCard
         title="Libus"
-        description="A social media app"
+        description="A social media app made with django"
         image="/Projects/Libus.png"
         link="https://github.com/iii123iii/Libus"
       />
       <ProjectCard
-        title="Libus"
-        description="A social media app"
-        image="/Projects/Libus.png"
-        link="https://github.com/iii123iii/Libus"
+        title="Opr"
+        description="A programmign language made with python"
+        image="/Projects/OPR.png"
+        link="https://github.com/iii123iii/OPR"
       />
       <ProjectCard
-        title="Libus"
-        description="A social media app"
-        image="/Projects/Libus.png"
-        link="https://github.com/iii123iii/Libus"
+        title="Compiler"
+        description="A compiler that sopports the command print made with python and assembly"
+        image="/Projects/Compiler.png"
+        link="https://github.com/iii123iii/Compiler"
       />
     </motion.div>
   );

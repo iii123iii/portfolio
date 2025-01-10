@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, image, link }: ProjectProps) => {
           </div>
         </CardItem>
         <div className="flex justify-between items-center mt-10 sm:mt-20">
-          <CardItem translateZ={20}>
+          <CardItem translateZ={25}>
             <Link
               className="px-3 py-2 sm:px-4 sm:py-2 rounded-xl bg-black text-white text-xs font-bold hover:bg-gray-800"
               href={link}
