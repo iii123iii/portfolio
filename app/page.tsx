@@ -23,7 +23,7 @@ const navItems = [
 
 export default function Home() {
   return (
-    <div className="relative  w-full">
+    <div className="relative w-full overflow-x-hidden">
       <FloatingNav navItems={navItems} />
       <Hero />
       <section id="projects">
