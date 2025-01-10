@@ -23,7 +23,7 @@ export function Hero() {
       >
         <div className="relative justify-items-start">
           <div>
-            <span className="black">Hi im</span>{" "}
+            <span className="black">Hi I'm</span>{" "}
             <Highlight className="text-white p-0">Omri</Highlight>
             <span className="black">,</span>
           </div>
