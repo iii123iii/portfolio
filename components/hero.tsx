@@ -31,7 +31,7 @@ export function Hero() {
           </div>
           <span className="black">And this is my portfolio.</span>
         </div>
-        <div className="flex text-start">
+        <div className="flex text-start pt-3">
           <Button asChild>
             <Link href="https://github.com/iii123iii" target="_blank">
               My Github
