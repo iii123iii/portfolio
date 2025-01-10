@@ -10,7 +10,7 @@ export function Expertise() {
       <div className="px-8 flex justify-center">
         <h1 className="text-white text-5xl font-bold">My Expertise</h1>
       </div>
-      <div className="py-20 flex flex-col md:flex-row lg:flex-row items-center justify-center bg-black w-full gap-12 mx-auto px-8">
+      <div className="py-20 flex flex-col md:flex-row lg:flex-row items-center justify-center bg-black w-full gap-12 mx-auto px-8 ">
         <Card title="Next.JS" icon={<NextJSLogo />}>
           <CanvasRevealEffect
             animationSpeed={4}
@@ -53,7 +53,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border group/canvas-card flex items-center justify-center border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem]"
+      className="border group/canvas-card flex items-center justify-center border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] overflow-hidden"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white" />
