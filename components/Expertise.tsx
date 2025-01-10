@@ -8,7 +8,7 @@ export function Expertise() {
   return (
     <>
       <div className="px-8 flex justify-center">
-        <h1 className="text-white text-5xl font-bold">My Expertise</h1>
+        <h1 className="text-white text-5xl font-bold overflow-hidden">My Expertise</h1>
       </div>
       <div className="py-20 flex flex-col md:flex-row lg:flex-row items-center justify-center bg-black w-full gap-12 mx-auto px-8 ">
         <Card title="Next.JS" icon={<NextJSLogo />}>
