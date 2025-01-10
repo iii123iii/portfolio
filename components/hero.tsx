@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { Spotlight } from "./ui/Spotlight";
 
 export function Hero() {
   return (
@@ -18,13 +19,16 @@ export function Hero() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+        className="text-3xl px-2 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
       >
-        <span className="black">The portfolio of</span>
-        <div className="h-6">
-          <br />
+        <div className="relative justify-items-start">
+          <div>
+            <span className="black">Hi im</span>{" "}
+            <Highlight className="text-white p-0">Omri K</Highlight>
+            <span className="black">,</span>
+          </div>
+          <span className="black">And this is my portfolio.</span>
         </div>
-        <Highlight className="text-white">Omri K.</Highlight>
       </motion.h1>
     </HeroHighlight>
   );

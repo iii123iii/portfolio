@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
+import { Spotlight } from "./Spotlight";
 
 export const HeroHighlight = ({
   children,
@@ -54,7 +55,17 @@ export const HeroHighlight = ({
           `,
         }}
       />
+      <div className="absolute top-0 left-0 w-full h-full pb-20 pt-36">
+        <Spotlight
+          className="absolute top-[5rem] left-0 w-[900px] h-screen"
+          fill="white"
+        />
 
+        <Spotlight
+          className="absolute top-0 left-0 w-full h-96"
+          fill="purple"
+        />
+      </div>
       <div className={cn("relative z-20", className)}>{children}</div>
     </div>
   );
