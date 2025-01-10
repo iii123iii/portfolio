@@ -15,19 +15,19 @@ const MyProjects = () => {
     >
       <ProjectCard
         title="Libus"
-        description="A social media app made with django"
+        description="A social media app made with Django"
         image="/Projects/Libus.png"
         link="https://github.com/iii123iii/Libus"
       />
       <ProjectCard
         title="Opr"
-        description="A programmign language made with python"
+        description="A programming language made with Python"
         image="/Projects/OPR.png"
         link="https://github.com/iii123iii/OPR"
       />
       <ProjectCard
         title="Compiler"
-        description="A compiler that sopports the command print made with python and assembly"
+        description="A compiler that supports the command print, made with Python and Assembly"
         image="/Projects/Compiler.png"
         link="https://github.com/iii123iii/Compiler"
       />
