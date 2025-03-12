@@ -8,9 +8,16 @@ interface ProjectProps {
   description: string;
   image: string;
   link: string;
+  viewProjectLink?: string;
 }
 
-const ProjectCard = ({ title, description, image, link }: ProjectProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  link,
+  viewProjectLink,
+}: ProjectProps) => {
   const formattedDescription = description.split("\n").map((line, index) => (
     <React.Fragment key={index}>
       {line}
@@ -35,12 +42,12 @@ const ProjectCard = ({ title, description, image, link }: ProjectProps) => {
           {formattedDescription}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <div className="w-full h-[200px] sm:w-[400px] sm:h-[240px]">
+          <div className="w-[400px] h-[200px] sm:w-[400px] sm:h-[240px]">
             <Image
               src={image}
-              height={240}
+              height={400}
               width={400}
-              className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
+              className="h-full w-full object-fill rounded-xl group-hover/card:shadow-xl"
               alt="thumbnail"
               loading="eager"
             />
@@ -56,6 +63,17 @@ const ProjectCard = ({ title, description, image, link }: ProjectProps) => {
               Go to Github
             </Link>
           </CardItem>
+          {viewProjectLink && (
+            <CardItem translateZ={25}>
+              <Link
+                className="px-3 py-2 sm:px-4 sm:py-2 rounded-xl bg-gray-700 text-white text-xs font-bold hover:bg-gray-600"
+                href={viewProjectLink}
+                target="_blank"
+              >
+                View project
+              </Link>{" "}
+            </CardItem>
+          )}
         </div>
       </CardBody>
     </CardContainer>

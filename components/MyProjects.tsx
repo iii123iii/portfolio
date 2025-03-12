@@ -20,16 +20,11 @@ const MyProjects = () => {
         link="https://github.com/iii123iii/Libus"
       />
       <ProjectCard
-        title="Opr"
-        description="A programming language made with Python"
-        image="/Projects/OPR.png"
-        link="https://github.com/iii123iii/OPR"
-      />
-      <ProjectCard
-        title="Compiler"
-        description={`A compiler that supports the command print,\nmade with Python and Assembly`}
-        image="/Projects/Compiler.png"
-        link="https://github.com/iii123iii/Compiler"
+        title="Blog"
+        description={`A blog made with Next.JS`}
+        image="/Projects/Blog.png"
+        link="https://github.com/iii123iii/blog"
+        viewProjectLink="https://blog.omriki.com"
       />
     </motion.div>
   );
