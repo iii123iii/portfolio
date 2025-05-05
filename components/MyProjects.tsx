@@ -24,7 +24,7 @@ const MyProjects = () => {
         description={`A blog made with Next.JS`}
         image="/Projects/Blog.png"
         link="https://github.com/iii123iii/blog"
-        viewProjectLink="https://blog.omriki.com"
+        viewProjectLink="https://blog.omridev.com"
       />
     </motion.div>
   );
